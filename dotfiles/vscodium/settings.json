@@ -1,0 +1,71 @@
+{
+    "workbench.colorTheme": "Mayukai Mirage Gruvbox Darktooth",
+    "files.autoSave": "afterDelay",
+    "vim.leader": "<space>",
+    "vim.smartRelativeLine": true,
+    "vim.easymotion": true,
+    "editor.fontLigatures": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.sneak": true,
+    "vim.easymotionMarkerooundColor": "#020202",
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<S-k>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<S-j>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "revealInExplorer"
+            ]
+        },
+    ],
+}
