@@ -232,21 +232,6 @@ echo "
 "
 wget https://download.onlyoffice.com/install/desktop/editors/linux/DesktopEditors-x86_64.AppImage
 
-# Install MegaSync
-echo "
-#####################################################################################################    
-                            Install Megasync
-######################################################################################################
-"
-if [ "$(cat /etc/lsb-release | head -"3" | tail -1 | cut -d '=' -f 2)" = "bionic" ];then
-	wget https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
-    sudo dpkg -i ./megasync-xUbuntu_18.04_amd64.deb && sudo apt-get install -f && rm -rf *.deb
-else
-	wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
-    sudo apt install ./megasync-xUbuntu_20.04_amd64.deb && rm -rf *.deb
-fi
-sudo apt --fix-broken install -y && rm -rf *.deb
-
 # Install Heroku cli
 echo "
 #####################################################################################################    
@@ -312,6 +297,21 @@ fi
     sudo apt install -y docker-ce
     sudo usermod -aG docker ${USER}
     su - ${USER}
+
+# Install MegaSync
+echo "
+#####################################################################################################    
+                            Install Megasync
+######################################################################################################
+"
+if [ "$(cat /etc/lsb-release | head -"3" | tail -1 | cut -d '=' -f 2)" = "bionic" ];then
+	wget https://mega.nz/linux/MEGAsync/xUbuntu_18.04/amd64/megasync-xUbuntu_18.04_amd64.deb
+    sudo dpkg -i ./megasync-xUbuntu_18.04_amd64.deb && sudo apt-get install -f && rm -rf *.deb
+else
+	wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
+    sudo apt install ./megasync-xUbuntu_20.04_amd64.deb && rm -rf *.deb
+fi
+sudo apt --fix-broken install -y && rm -rf *.deb
 
 # Install media codecs
 echo "
