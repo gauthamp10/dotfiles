@@ -5,7 +5,7 @@
 setxkbmap -option caps:none
 ```
 
-### Remap Alt to Capslock key
+### Map Alt to Capslock key
 ```
 xmodmap -e "keycode 66 = Alt_R NoSymbol Alt_R"
 ```
