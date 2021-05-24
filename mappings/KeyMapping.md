@@ -56,7 +56,7 @@ n - Cycle forward to the next find match
 N - Cycle backward to the previous find match
 ```
 
-###Vimium custom keymap
+### Vimium custom keymap
 ```
 map e scrollPageUp
 ```
