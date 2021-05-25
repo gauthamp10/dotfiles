@@ -1,3 +1,4 @@
+
 # Keybindings
 
 ### Make Capslock none
@@ -12,19 +13,20 @@ xmodmap -e "keycode 66 = Alt_R NoSymbol Alt_R"
 
 ### Window & Workspace
 ```
-Alt - j (Cycle windows in a workspace)
-Alt - k (Cycle windows in reverse order in a workspace)
-Alt - l (Next workspace)
-Alt - h (Previous workspace)
+Alt - h (Cycle windows in a workspace)
+Alt - l (Cycle windows in reverse order in a workspace)
+Alt - j (Previous workspace)
+Alt - k (Next workspace)
 Alt - q (Close current focused window)
-alt - ; (launch rofi)
-alt - t (launch terminal with tmux)
-alt - m (launch vifm)
+Alt - r (launch rofi)
+Alt - t (launch tilda)
+Alt - f (launch vifm)
 Alt - v (launch vim)
 Alt - b (launch browser)
+Alt - m (launch music player)
 Alt - s (spotify)
-Alt - Enter (launch tilda)
 Alt - [0-9] (Go to specific workspace)
+Control - Alt - l (launch default terminal)
 Super - l (Lockscreen)
 ```
 
@@ -43,7 +45,7 @@ X - Restore last closed tab
 d - Scroll half page down
 e - Scroll half page up
 gg - Scroll to the top of the page
-G - Scroll to the bottom of the page 
+G - Scroll to the bottom of the page
 f - Open a link in the current tab
 F - Open a link in the new tab
 o - Open URL, bookmark or history entry
