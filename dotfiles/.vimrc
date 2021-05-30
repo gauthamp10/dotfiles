@@ -37,7 +37,6 @@ Plugin 'nvie/vim-flake8'                            " flake8 for vim
 Plugin 'ap/vim-css-color'                           " show colors from colorcode within vim
 Plugin 'turbio/bracey.vim'                          " static file webserver *requires - node
 Plugin 'ayu-theme/ayu-vim'                          " ayu theme
-Plugin 'megantiu/true.vim'
 Plugin 'makerj/vim-pdf'                             " open pdf inside vim
 Plugin 'mhinz/vim-startify'                         " fancy start screen
 
@@ -85,7 +84,7 @@ let g:SimpylFold_docstring_preview=1
 syntax enable
 set termguicolors                               " enable true colors support
 let ayucolor="dark"                             " for dark version of theme
-colorscheme true
+colorscheme ayu
 
 
 " lightline config
