@@ -19,7 +19,7 @@ set vicmd=vim
 " standard utilities like `cp`.  While using `cp` and alike is a more universal
 " solution, it's also much slower and doesn't support progress measuring.
 
-" set syscalls
+set syscalls
 
 " Trash Directory
 " The default is to move files that are deleted with dd or :d to
@@ -63,7 +63,7 @@ set norunexec
 
 " Selected color scheme
 
-colorscheme Default
+colorscheme gruvbox
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -109,7 +109,7 @@ endif
 
 " Set custom status line look
 
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+set statusline="  Hint: %z%= %A %10u:%-7g %15E %20d  "
 
 " ------------------------------------------------------------------------------
 
@@ -199,6 +199,7 @@ filextype *.djvu
 " Audio
 filetype *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus
        \ audacious &,
+       \ celluloid &,
        \ {Play using ffplay}
        \ ffplay -nodisp %c,
        \ {Play using MPlayer}
@@ -549,3 +550,9 @@ nnoremap dt :move<cr>
 
 nnoremap bl :cd ~/.local/
 nnoremap bc :cd ~/.config/
+
+nnoremap J 5j
+nnoremap K 5k
+
+nnoremap - <C-w>5<
+nnoremap _ <C-w>5>
